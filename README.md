@@ -44,7 +44,7 @@ A series of words... A line of poetry in fact! appear confidently on the page:
 
 Jean sighs, ever so slightly, as he feels his heart awaken. The walled structure holding a desparate watch over his soul flees.
 
-:love_hotel:
+# :love_hotel:
 
 ## Development and Design
 
@@ -91,7 +91,7 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 ### The live state of this app can currently be accessed at: 
 #### https://lbgraham.github.io/poetry-on-the-page/
 
-### It is currently non-functional and does not include any working features, so not much to see there... 
-## yet...
+### It is currently non-functional and does not include any working features, so not much to see... 
+### yet...
 
 
