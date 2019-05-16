@@ -65,20 +65,25 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 
 #### MVP #1: The ability for a user to click a button and then return a unique poem based on parts of speech for each word and order it in a way that makes sense
 
-#### MVP #2: Stylize the product so that it is aesthetically pleasing. This includes adding full drag and drop capabilities to the individual magnets and displaying a pool of other magnets 
+#### MVP #2: Stylize the product so that it is aesthetically pleasing. This includes adding full drag and drop capabilities to the individual magnets and displaying a pool of other magnets
+
+#### MVP #3: Incorporate machine learning in to the poetry generation using tensorflow.js. The idea is that this could potentially increase the quality of the generated poems
+
+#### MVP #4: Create a simple blockchain to record each randomly generated poem allowing the app to become a dapp that stores each poem created in the blockchain for others to view
 
 ## Tasks :calendar:
 
 ### Basic Reqs
 - [ ] Where to store data? (localstorage)
-	This data store could range from a simple array with words to a more complex object structure which includes keys for rhyming, type of word, etc.
+	This data store could range from a simple array with words to a more complex object structure which includes keys for rhyming, type of word, etc. This will start with basic arrays based on the type of word similar to the way the Twiddler application generated tweets
 - [ ] How to caputure data? (web form)
-
+	The first product will allow to generate a verse of poetry to view. More complex features, such as having various types of selections for tuning the specific generation to a desired genre or emotion
 - [ ] How to modify data? (update action, delete action)
-	Multiple items will need to be updated at various times on screen.
+	Multiple items will need to be updated at various times on screen. The bulk of the page will consist of virtual magnets. These magnets can be moved and rearranged similar to the way one would use the fridge for magnetic poetry
 - [ ] How to view data? (style?)
 	This will be styles as a menu header with basic information and a footer with contact information and app information. The body of the page will be mostly draggable.
 - [ ] UI/UX considerations (how are we going to use this)
+	UI/UX will play a large part in this development. For aesthetic and functional purposes, the page will consist of a header and a footer. The body of the page will be completely draggable with the magnets it generates.
 
 ### Advanced Reqs
 - [ ] Integrate the word selection with TensorFlow.js. Using pre-trained datasets if possible.
