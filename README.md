@@ -84,12 +84,14 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 - [ ] Integrate the word selection with TensorFlow.js. Using pre-trained datasets if possible.
 - [ ] Create a blockchain to save each poem created so that you build a natural immutable flow of each created verse
 
-#### The above advanced requirements were included because I have a personal interest in AI/blockchain development and was looking for a way to integrate these interests. The basic requirements will extend from the way dataGenerator.js creaeted tweets in the Twiddler application. A large amount of effort will be put in to stylizing the front-end
+#### The above advanced requirements were included because I have a personal interest in AI/blockchain development and was looking for a way to integrate these interests. The basic requirements will extend from the way dataGenerator.js creaeted tweets in the Twiddler application. A large amount of effort will be put in to stylizing the front-end since I feel that really understanding layouts, CSSGrid, flexbox, etc. is something that I could use work on. 
 
 ## Notes on the app
 
-### The live state of this app can currently be accessed at: https://lbgraham.github.io/poetry-on-the-page/
+### The live state of this app can currently be accessed at: 
+#### https://lbgraham.github.io/poetry-on-the-page/
 
-### It is currently non-functional and does not include any working features, so not much to see there... yet...
+### It is currently non-functional and does not include any working features, so not much to see there... 
+## yet...
 
 
