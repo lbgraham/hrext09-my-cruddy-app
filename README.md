@@ -15,7 +15,7 @@
 
 ## The Story :scroll:
 
-Jean :neckbeard:, after a rough day of killing dreams has a magical idea! 
+Jean [ʒɑ̃] :neckbeard:, after a rough day of killing dreams has a magical idea! 
 
 'Some poetry would sure cheer me up!', he quickly surmises only to be immediately entangled in the putrid bowels of writers block.
 You see, Jean is woefully encumbered with fathomless feelings of laziness and the mere idea of birthing this poem seems a pregnancy of untold weight.
