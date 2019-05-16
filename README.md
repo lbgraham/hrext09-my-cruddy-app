@@ -24,7 +24,7 @@ You see, Jean is woefully encumbered with fathomless feelings of laziness and th
 
 But what about this idea? We musn't forget that. Perhaps he could wake up his wife and see if she could churn out some verse. The likes of which would surely reanimate these scribe hacks of yesteryear. But alas! it's 3am and the poetry she would likely spout is far from the type of poetry he is looking to hear at such an early hour. 
 
-His eyes are drawn to the newer computer, one that is used for serious stuff. So many years and endless git commits helping companies generate more and more revenue. Could it be? Could it actually be that perhaps this is the answer to his woe? The stoic screen stares back, a mirror to his own soul. The years of typing lines of antipathetic code has also constructed an unearthly castle of inner torment. A dark and dreary landscape of walled emotion. How is it possible for this screen, who shares his own identity, is it true that binary is only analog at a distance?
+His eyes are drawn to the newer computer, one that is used for serious stuff. So many years and endless git commits helping companies generate more and more revenue. Could it be? Could it actually be that perhaps this is the answer to his woe? The stoic screen stares back, a mirror to his own soul. The years of typing lines of antipathetic code has also constructed an unearthly castle of inner torment. A dark and dreary landscape of walled emotion. How is it possible for this screen, who shares his own identity, is it true that analog is only binary at a distance?
 
 And so we enter a world where the computer now writes these musical words...
 
