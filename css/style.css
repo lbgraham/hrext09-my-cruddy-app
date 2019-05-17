@@ -2,3 +2,18 @@
   input boxes
   buttons
 */
+
+/*@import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Open+Sans&display=swap');
+*/
+#draggable {
+	width: 150px;
+	height: 150px;
+	padding: 0.5em;
+}
+
+p {
+	font-family: 'Goudy Bookletter 1911', serif;
+	font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  text-shadow: 4px 4px 4px #aaa;
+}

@@ -45,6 +45,9 @@ var keyExists = function(key) {
 //event handlers for the buttons and ... possibly the inputboxes
   //preventdefault on button clicks
 $(document).ready(function() {
+  
+  $( "#draggable" ).draggable();
+
   $('#createButton').click(function(event) {
     event.preventDefault();
 

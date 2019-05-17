@@ -20,7 +20,7 @@ Jean [ʒɑ̃] :neckbeard:, after a rough day of killing dreams has a magical ide
 'Some poetry would sure cheer me up!', he quickly surmises only to be immediately entangled in the putrid bowels of writers block.
 You see, Jean is woefully encumbered with fathomless feelings of laziness and the mere idea of birthing this poem seems a pregnancy of untold weight.
 
-'Finally an idea!', Jean thinks, at a decibel level clearly perceptible to the myriad of clown heads which adorn his shack. This shack, it turns out, is worthy of discussion. Consisting of little more than a bathroom curtain, some plywood, and two computers; one of which is cutting edge, the other, a Commodore 64 with a tape drive, most recently used yesterday to play the 80's Infocom hit 'The Leather Goddesses of Phobos'. 
+'Finally an idea!', Jean thinks, at a decibel level clearly perceptible to the myriad of clown heads which adorn his shack. This shack, it turns out, is worthy of discussion. Consisting of little more than a bathroom curtain, some plywood, and two computers; one of which is cutting edge, the other, a Commodore 64 with a tape drive :vhs:, most recently used yesterday to play the 80's Infocom hit 'The Leather Goddesses of Phobos'. 
 
 But what about this idea that awakened the clowns you ask? We musn't forget that. Perhaps he could wake up his wife and see if she could churn out some verse. The likes of which would surely reanimate these scribe hacks of yesteryear. But alas! it's 3am and the poetry she would likely spout is far from the type of poetry he is looking to hear at such an early hour. 
 
@@ -91,7 +91,7 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 
 #### The above advanced requirements were included because I have a personal interest in AI/blockchain development and was looking for a way to integrate these interests. The basic requirements will extend from the way dataGenerator.js creaeted tweets in the Twiddler application. A large amount of effort will be put in to stylizing the front-end since I feel that really understanding layouts, CSSGrid, flexbox, etc. is something that I could use work on. 
 
-## Notes on the app
+## Notes on the app :notes:
 
 ### The live state of this app can currently be accessed at: 
 #### https://lbgraham.github.io/poetry-on-the-page/
