@@ -1,13 +1,13 @@
 // But what about the children!!! The PTA had not disbanded!
-const hashCode = function(str) {
-  var hash = 0;
+const hashCode = (str) => {
+  let hash = 0;
 
-  for(var i = 0; i < str.length; i++) {
+  for(let i = 0; i < str.length; i++) {
     hash = 31 * hash + str.charCodeAt(i);
   }
 
   return hash;
-}
+};
 
 let encodedWords = [3506334754, 95023547, 2999179, 96897, 2785519250869, 93502036, 89862145907, 
 93747762, 2905630879, 90173470411, 2795375373903, 90256264042, 2911492393, 
