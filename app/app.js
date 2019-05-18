@@ -48,7 +48,7 @@ $(document).ready(function() {
   $.get('https://got-quotes.herokuapp.com/quotes', function(data) {
     let words = data.quote.split(' ');
     for(let i = 0; i < words.length; i++) {
-      if(encodedWords.includes(hashCode(words[i]))) {
+      if(encodedWords.includes(hashCode(words[i].toLowerCase()))) {
         $( '#random-quote' ).html( 'GoT Quote Redacted - Adult Content - Thanks to ' + data.character );
         console.log('Hit it');
         break;
