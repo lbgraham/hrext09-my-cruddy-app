@@ -5,7 +5,7 @@ $(document).ready(function() {
     return array[randomIndex];
   };
 
-  var randomMessage = function() {
+  var randomPoem = function() {
     return [
       randomElement(opening),
       randomElement(verbs),
@@ -17,13 +17,12 @@ $(document).ready(function() {
 
   $('#generate-poem').click(function(event) {
     event.preventDefault();
-
-    var boxStyle = 'style="display: flex; justify-content: center; \
-      align-text: center; height: 25px; border: 2px solid gray; padding: 20px"';
-
     $( 'p' ).remove();
 
-    var poem = randomMessage();
+    var poem = randomPoem();
+    var extraWords = randomPoem();
+    var boxStyle = 'style="display: flex; justify-content: center; \
+      align-text: center; height: 25px; border: 2px solid black; padding: 10px"';
 
     for(var i = 0; i < poem.length; i++) {
       if(poem[i] !== '') {
@@ -32,6 +31,12 @@ $(document).ready(function() {
       }
     }
 
+    // for(var i = 0; i < extraWords.length; i++) {
+    //   if(extraWords[i] !== '') {
+    //     $( '#magnets' ).append( '<p id="poem-word' + i + '" ' + boxStyle + '>' + extraWords[i] + '</p>' );
+    //     $( '#poem-word' + i ).draggable();
+    //   }
+    // }    
   });
 
 });

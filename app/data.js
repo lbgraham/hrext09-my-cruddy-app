@@ -4,9 +4,9 @@ var opening = [
   "",
   "",
   "",
-  "ask me how i",
-  "completely",
-  "nearly",
+  "Alas",
+  "Overly",
+  "Nearly",
   "productively",
   "efficiently",
   "last night i",
@@ -17,8 +17,8 @@ var opening = [
 ];
 
 var verbs = [
-  "downloaded",
-  "interfaced",
+  "loved",
+  "held",
   "deployed",
   "developed",
   "built",

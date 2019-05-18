@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap');
 
+h1 {
+  display: flex;
+  align-content: center;
+  font-family: 'Pinyon Script', cursive;
+}
 form {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 button {
