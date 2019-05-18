@@ -7,6 +7,7 @@ h1 {
   align-content: center;
   font-family: 'Pinyon Script', cursive;
 }
+
 form {
   display: flex;
   justify-content: flex-end;
@@ -31,7 +32,14 @@ hr {
   color: #aaa;
 }
 
-footer {
+blockquote {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  color: #aaa
+}
+
+#info {
   display: flex;
   font-family: 'Inconsolata', monospace;
   color: #aaa;

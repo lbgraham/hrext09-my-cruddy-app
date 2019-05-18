@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
 
   var randomElement = function(array) {
@@ -37,6 +39,10 @@ $(document).ready(function() {
     //     $( '#poem-word' + i ).draggable();
     //   }
     // }    
+  });
+
+  $.get('https://got-quotes.herokuapp.com/quotes', function(data) {
+    $( '#random-quote' ).html( data.quote + '<br>' + '-' + data.character );
   });
 
 });
