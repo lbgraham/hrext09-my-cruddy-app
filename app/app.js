@@ -1,3 +1,27 @@
+var getItem = function(key) {
+  return window.localStorage.getItem(key);
+}
+
+//create
+var createItem = function(key, value) {
+  return window.localStorage.setItem(key, value);
+}
+
+//update
+var updateItem = function(key, value) {
+  return window.localStorage.setItem(key, value);
+}
+
+//delete
+var deleteItem = function(key) {
+  return window.localStorage.removeItem(key);
+}
+
+//clear everything
+var clearEverything = function() {
+  return window.localStorage.clear();
+}
+
 $(document).ready(function() {
 
   var randomElement = function(array) {
@@ -23,6 +47,9 @@ $(document).ready(function() {
     var extraWords = randomPoem().concat(randomPoem());
     var boxStyle = 'style="display: flex; justify-content: center; \
       align-text: center; height: 25px; border: 2px solid black; padding: 10px"';
+
+    jsonPoem = JSON.stringify(poem);
+    createItem('poem' + String(times++), jsonPoem);
 
     for(var i = 0; i < poem.length; i++) {
       if(poem[i] !== '') {
