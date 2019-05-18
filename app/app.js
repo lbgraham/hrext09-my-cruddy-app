@@ -1,8 +1,4 @@
 $(document).ready(function() {
-  window.streams = {};
-  streams.home = [];
-  streams.users = {};
-  window.users = Object.keys(streams.users);
 
   var randomElement = function(array) {
     var randomIndex = Math.floor(Math.random() * array.length);
