@@ -21,10 +21,11 @@ $(document).ready(function() {
     console.log(poem);
 
     for(var i = 0; i < poem.length; i++) {
-      $( '#poem' ).append( '<p>' + poem[i] + '</p>' );
+      if(poem[i] !== '') {
+        $( '#magnets' ).append( '<p class="poem-word' + i + '">' + poem[i] + '</p>' );
+        $( '.poem-word' + i ).draggable();
+      }
     }
   });
-
-  $( "#magnets" ).draggable();
 
 });
