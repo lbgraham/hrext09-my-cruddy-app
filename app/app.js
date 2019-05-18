@@ -20,11 +20,11 @@ $(document).ready(function() {
 
     $( 'p' ).remove();
 
-    poem = randomMessage();
+    var poem = randomMessage();
 
     for(var i = 0; i < poem.length; i++) {
       if(poem[i] !== '') {
-        $( '#magnets' ).append( '<p id="poem-word' + i + '" style="display: flex; justify-content: flex-end">' + poem[i] + '</p>' );
+        $( '#magnets' ).append( '<p id="poem-word' + i + '" style="padding-left: 30px">' + poem[i] + '</p>' );
         $( '#poem-word' + i ).draggable();
       }
     }

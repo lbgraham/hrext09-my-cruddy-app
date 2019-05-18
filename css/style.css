@@ -14,13 +14,10 @@ button {
 }
 
 #magnets {
-	width: 150px;
-	height: 150px;
-	padding: 0.5em;
-}
-
-#poem-word0 {
-	font-family: 'Goudy Bookletter 1911', serif;
+  display: flex;
+  justify-content: center;
+/*  align-content: flex-start;*/
+  font-family: 'Goudy Bookletter 1911', serif;
   font-size: 18px;
 }
 
