@@ -1,19 +1,43 @@
-/*
-  input boxes
-  buttons
-*/
+@import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
-/*@import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Open+Sans&display=swap');
-*/
-#draggable {
+body {
+  background-color: grey;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  font-family: 'Goudy Bookletter 1900', serif;
+  font-size: 24px;
+}
+
+#magnets {
 	width: 150px;
 	height: 150px;
 	padding: 0.5em;
 }
 
-p {
+#poem {
 	font-family: 'Goudy Bookletter 1911', serif;
-	font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  text-shadow: 4px 4px 4px #aaa;
+  font-size: 18px;
+  color: white;
+}
+
+hr {
+  color: #aaa;
+}
+
+footer {
+  display: flex;
+  font-family: 'Inconsolata', monospace;
+  color: #aaa;
+  justify-content: flex-end;
 }
