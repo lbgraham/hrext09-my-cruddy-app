@@ -33,12 +33,12 @@ $(document).ready(function() {
       }
     }
 
-    // for(var i = 0; i < extraWords.length; i++) {
-    //   if(extraWords[i] !== '') {
-    //     $( '#magnets' ).append( '<p id="poem-word' + i + '" ' + boxStyle + '>' + extraWords[i] + '</p>' );
-    //     $( '#poem-word' + i ).draggable();
-    //   }
-    // }    
+    for(var i = 0; i < extraWords.length; i++) {
+      if(extraWords[i] !== '') {
+        $( '#extra-magnets' ).append( '<p id="poem-word' + i + '" ' + boxStyle + '>' + extraWords[i] + '</p>' );
+        $( '#poem-word' + i ).draggable();
+      }
+    }    
   });
 
   $.get('https://got-quotes.herokuapp.com/quotes', function(data) {
