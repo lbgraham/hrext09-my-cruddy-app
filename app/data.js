@@ -1,3 +1,4 @@
+// Pool of words to use for testing basic text generation
 const opening = [
   "just",
   "",

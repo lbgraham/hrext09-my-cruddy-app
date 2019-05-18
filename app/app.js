@@ -1,11 +1,13 @@
 $(document).ready(function() {
   let times = 0;
 
+  // Selects the random word for each part of speech
   const randomElement = function(array) {
     const randomIndex = Math.floor(Math.random() * array.length);
     return array[randomIndex];
   };
 
+  // Constructs the random poem
   const randomPoem = function() {
     return [
       randomElement(opening),
@@ -18,6 +20,7 @@ $(document).ready(function() {
 
   $(' .logo ').draggable();
 
+  // Generate a random poem. Currently creates random poem from the data structures in data.js
   $( '#generate-poem' ).click(function(event) {
     event.preventDefault();
     $( 'p' ).remove();
@@ -45,6 +48,7 @@ $(document).ready(function() {
     }    
   });
 
+  // Obtain a random Game of Thrones quote from an API and display in footer
   $.get('https://got-quotes.herokuapp.com/quotes', function(data) {
     let words = data.quote.split(' ');
     for(let i = 0; i < words.length; i++) {
