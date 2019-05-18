@@ -19,15 +19,10 @@ $(document).ready(function() {
     ].join(" ");
   };
 
-  var generateRandomTweet = function() {
-    var tweet = {};
-    tweet.message = randomMessage();
-  };
-
   $('#generate-poem').click(function(event) {
     event.preventDefault();
     var poem = "<p>" + randomMessage() + "</p>";
-    $( "#poem" ).replaceWith( poem );
+    $( "#poem" ).append( poem );
   });
 
   $( "#magnets" ).draggable();
