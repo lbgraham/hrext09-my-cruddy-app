@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 
   var randomElement = function(array) {
@@ -22,7 +20,7 @@ $(document).ready(function() {
     $( 'p' ).remove();
 
     var poem = randomPoem();
-    var extraWords = randomPoem();
+    var extraWords = randomPoem().concat(randomPoem());
     var boxStyle = 'style="display: flex; justify-content: center; \
       align-text: center; height: 25px; border: 2px solid black; padding: 10px"';
 
@@ -33,7 +31,7 @@ $(document).ready(function() {
       }
     }
 
-    for(var i = 0; i < extraWords.length; i++) {
+    for(var i = poem.length; i < extraWords.length; i++) {
       if(extraWords[i] !== '') {
         $( '#extra-magnets' ).append( '<p id="poem-word' + i + '" ' + boxStyle + '>' + extraWords[i] + '</p>' );
         $( '#poem-word' + i ).draggable();
