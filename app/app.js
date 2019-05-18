@@ -16,13 +16,17 @@ $(document).ready(function() {
       randomElement(objects),
       randomElement(nouns),
       randomElement(tags)
-    ].join(" ");
+    ];
   };
 
   $('#generate-poem').click(function(event) {
     event.preventDefault();
-    var poem = "<p>" + randomMessage() + "</p>";
-    $( "#poem" ).append( poem );
+    var poem = randomMessage();
+    console.log(poem);
+
+    for(var i = 0; i < poem.length; i++) {
+      $( '#poem' ).append( '<p>' + poem[i] + '</p>' );
+    }
   });
 
   $( "#magnets" ).draggable();
