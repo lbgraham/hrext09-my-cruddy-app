@@ -1,4 +1,4 @@
-var opening = [
+const opening = [
   "just",
   "",
   "",
@@ -16,7 +16,7 @@ var opening = [
   "a seedy old man"
 ];
 
-var verbs = [
+const verbs = [
   "loved",
   "held",
   "deployed",
@@ -38,7 +38,7 @@ var verbs = [
   "computed"
 ];
 
-var objects = [
+const objects = [
   "my",
   "your",
   "the",
@@ -52,7 +52,7 @@ var objects = [
   "a new form of"
 ];
 
-var nouns = [
+const nouns = [
   "cat",
   "koolaid",
   "system",
@@ -71,7 +71,7 @@ var nouns = [
   "mind"
 ];
 
-var tags = [
+const tags = [
   "#techlife",
   "#burningman",
   "#sf",

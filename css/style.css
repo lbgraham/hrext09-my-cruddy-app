@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap');
 
-h1 {
+/* Poetry on the page logo styling */
+.logo {
   display: flex;
-  align-content: center;
-  font-family: 'Pinyon Script', cursive;
+  justify-content: center;
+  flex-direction: row;
+  font-family: 'Goudy Bookletter 1900', serif;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+#all-logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 
 form {
@@ -16,14 +25,14 @@ form {
 button {
   display: flex;
   justify-content: center;
-  font-family: 'Goudy Bookletter 1900', serif;
+  font-family: 'Inconsolata', monospace;
   font-size: 24px;
 }
 
 #magnets {
   display: flex;
   justify-content: center;
-  height: 500px;
+  height: 300px;
   font-family: 'Goudy Bookletter 1911', serif;
   font-size: 18px;
 }
@@ -31,7 +40,7 @@ button {
 #extra-magnets {
   display: flex;
   justify-content: center;
-  height: 500px;
+  height: 300px;
   font-family: 'Goudy Bookletter 1911', serif;
   font-size: 18px;
 }
