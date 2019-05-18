@@ -16,7 +16,7 @@ button {
 #magnets {
   display: flex;
   justify-content: center;
-/*  align-content: flex-start;*/
+  height: 500px;
   font-family: 'Goudy Bookletter 1911', serif;
   font-size: 18px;
 }
