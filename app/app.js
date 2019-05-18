@@ -17,15 +17,18 @@ $(document).ready(function() {
 
   $('#generate-poem').click(function(event) {
     event.preventDefault();
-    var poem = randomMessage();
-    console.log(poem);
+
+    $( 'p' ).remove();
+
+    poem = randomMessage();
 
     for(var i = 0; i < poem.length; i++) {
       if(poem[i] !== '') {
-        $( '#magnets' ).append( '<p class="poem-word' + i + '">' + poem[i] + '</p>' );
-        $( '.poem-word' + i ).draggable();
+        $( '#magnets' ).append( '<p id="poem-word' + i + '" style="display: flex; justify-content: flex-end">' + poem[i] + '</p>' );
+        $( '#poem-word' + i ).draggable();
       }
     }
+
   });
 
 });
