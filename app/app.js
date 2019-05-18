@@ -1,28 +1,33 @@
-var getItem = function(key) {
-  return window.localStorage.getItem(key);
-}
+// Local storage CRUD functions
+let store = () => {
+  
+  let getItem = (key) => {
+    return window.localStorage.getItem(key);    
+  };
 
-//create
-var createItem = function(key, value) {
-  return window.localStorage.setItem(key, value);
-}
+  let create = (key, value) => {
+    return window.localStorage.setItem(key, value);    
+  };
 
-//update
-var updateItem = function(key, value) {
-  return window.localStorage.setItem(key, value);
-}
+  let update = (key, value) => {
+    return window.localStorage.setItem(key, value);    
+  };
 
-//delete
-var deleteItem = function(key) {
-  return window.localStorage.removeItem(key);
-}
+  let rm = (key) => {
+    return window.localStorage.removeItem(key);    
+  };
 
-//clear everything
-var clearEverything = function() {
-  return window.localStorage.clear();
-}
+  let clearAll = () => {
+    return window.localStorage.clear();    
+  };
+
+  return { getItem, create, update, rm, clearAll };
+};
+
+let ls = store();
 
 $(document).ready(function() {
+  var times = 0;
 
   var randomElement = function(array) {
     var randomIndex = Math.floor(Math.random() * array.length);
@@ -49,7 +54,8 @@ $(document).ready(function() {
       align-text: center; height: 25px; border: 2px solid black; padding: 10px"';
 
     jsonPoem = JSON.stringify(poem);
-    createItem('poem' + String(times++), jsonPoem);
+    console.log(store);
+    ls.create('poem' + String(times++), jsonPoem);
 
     for(var i = 0; i < poem.length; i++) {
       if(poem[i] !== '') {
