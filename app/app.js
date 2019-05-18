@@ -16,9 +16,7 @@ $(document).ready(function() {
     ];
   };
 
-  // $( '.logo' ).click(function(event)) {
-    $(' .logo ').draggable();
-  // }
+  $(' .logo ').draggable();
 
   $( '#generate-poem' ).click(function(event) {
     event.preventDefault();
@@ -30,7 +28,6 @@ $(document).ready(function() {
       align-text: center; height: 25px; border: 2px solid black; padding: 10px"';
 
     jsonPoem = JSON.stringify(poem);
-    console.log(store);
     ls.create('poem' + String(times++), jsonPoem);
 
     for(let i = 0; i < poem.length; i++) {
@@ -50,10 +47,11 @@ $(document).ready(function() {
 
   $.get('https://got-quotes.herokuapp.com/quotes', function(data) {
     let words = data.quote.split(' ');
-    console.log(words);
     for(let i = 0; i < words.length; i++) {
-      if(encodedWords.includes(window.btoa(words[i]))) {
-        $( '#random-quote' ).html( 'Adult Content' );
+      if(encodedWords.includes(hashCode(words[i]))) {
+        $( '#random-quote' ).html( 'GoT Quote Redacted - Adult Content - Thanks to ' + data.character );
+        console.log('Hit it');
+        break;
       } else {
         $( '#random-quote' ).html( data.quote + '<br>' + '-' + data.character );
       }
