@@ -74,6 +74,7 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 - [ ] Add an additional selection to display an entire generated poem or generated piece of prose
 - [ ] Create a simple blockchain to store the previously created poems for consistence
 - [ ] Add API endpoint for obtaining randomly generated poem
+- [ ] Add support for mobile devices
 
 ### Basic Reqs - NOTE: Core feature ideas (except AI text generation) is complete. Improvement tasks are listed above
 - [√] Where to store data? (localstorage)
@@ -90,6 +91,8 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 #### https://lbgraham.github.io/poetry-on-the-page/
 
 ## App Status:
+
+**Note: Currently only testing under Google Chrome for Mac (Version 74.0.3729.157 (Official Build) (64-bit))**
 
 The app currently has basic functionality, but still needs to address some of the tasks listed in the *Outstanding Tasks* section
 
