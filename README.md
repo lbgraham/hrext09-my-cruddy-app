@@ -13,7 +13,7 @@
 
 ## The Story :scroll:
 
-Jean [ʒɑ̃] :neckbeard:, after a rough day of killing dreams, has a magical idea! 
+Jean [ʒɑ̃] :fr: :neckbeard:, after a rough day of killing dreams, has a magical idea! 
 
 'Some poetry would sure cheer me up!', he quickly surmised only to be immediately entangled in the putrid bowels of writers block. You see, Jean is woefully encumbered with fathomless feelings of laziness and the mere idea of birthing this poem seems a pregnancy of untold weight.
 
@@ -65,10 +65,10 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 #### MVP #4: Create a simple blockchain to record each randomly generated poem.
 
 ## Outstanding Tasks :calendar:
-- [ ] General clean-up and refactoring of code
+- [√] General clean-up and refactoring of code (Mostly happy with the code currently, but need to work on app.js a bit)
 - [√] Add randomization to the initial placement of the logo magnets in the header on page load
 - [√] Add randomization to the magnets that form the inital poem once is is generated (Ok with this for now)
-- [ ] Add randomization to the extra magnets that are presented at the bottom when a poem is generated
+- [√] Add randomization to the extra magnets that are presented at the bottom when a poem is generated (Mostly complete, could be improved later)
 - [√] Add ability to pull a line from a sonnet from Shakespeare via API as a interim step to machine learning (does not work on Github Pages - uses a insecure API)
 - [√] Stylize the 'Create Poetry' button for aesthetics (Looks ok to me for now)
 - [√] Improve overall page aesthetic (Overall happy with the current aesthetic once I get the random placement of the extra magnets implemented)
@@ -77,7 +77,7 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 - [ ] Create a simple blockchain to store the previously created poems for consistence
 - [ ] Add API endpoint for obtaining randomly generated poem
 - [√] Add support for mobile devices (But the formatting is blah. It does work though)
-- [ ] Post a formatted image og the quote on social media sites
+- [ ] Post a formatted image of the quote on social media sites
 
 ### Basic Reqs - NOTE: Core feature ideas (except AI text generation) is complete. Improvement tasks are listed above
 - [√] Where to store data? (localstorage)
