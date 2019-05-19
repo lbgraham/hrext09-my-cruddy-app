@@ -60,6 +60,11 @@ blockquote {
   color: #aaa
 }
 
+footer {
+  display: flex;
+  flex-flow: row;
+}
+
 #info {
   display: flex;
   font-family: 'Inconsolata', monospace;
