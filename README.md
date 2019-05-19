@@ -66,12 +66,12 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 
 ## Outstanding Tasks :calendar:
 - [ ] General clean-up and refactoring of code
-- [ ] Add randomization to the initial placement of the logo magnets in the header on page load
-- [ ] Add randomization to the magnets that form the inital poem once is is generated
+- [√] Add randomization to the initial placement of the logo magnets in the header on page load
+- [√] Add randomization to the magnets that form the inital poem once is is generated (Ok with this for now)
 - [ ] Add randomization to the extra magnets that are presented at the bottom when a poem is generated
-- [ ] Add ability to pull a line from a sonnet from Shakespeare via API as a interim step to machine learning
-- [ ] Stylize the 'Create Poetry' button for aesthetics
-- [ ] Improve overall page aesthetic
+- [√] Add ability to pull a line from a sonnet from Shakespeare via API as a interim step to machine learning (does not work on Github Pages - uses a insecure API)
+- [√] Stylize the 'Create Poetry' button for aesthetics (Looks ok to me for now)
+- [√] Improve overall page aesthetic (Overall happy with the current aesthetic once I get the random placement of the extra magnets implemented)
 - [ ] Integrate text generation using tensorflow.js on a trained model of poetry
 - [ ] Add an additional selection to display an entire generated poem or generated piece of prose
 - [ ] Create a simple blockchain to store the previously created poems for consistence
