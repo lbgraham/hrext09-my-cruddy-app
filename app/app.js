@@ -22,17 +22,6 @@ $(document).ready(function() {
     return extraMagnetWords;
   }
 
-  // Constructs the random poem
-  const randomPoem = function() {
-    return [
-      randomElement(opening),
-      randomElement(verbs),
-      randomElement(objects),
-      randomElement(nouns),
-      randomElement(tags)
-    ];
-  };
-
   $(' .logo ').draggable();
 
 // Testing area for logo randomness
