@@ -1,7 +1,8 @@
-    let here = $.get('http://poetrydb.org/author,title/Shakespeare;Sonnet', function(data) {
-      let words = data[0]['lines'];
-      poem = words[Math.floor(Math.random() * words.length)].split(' ');
-    });
+let poem;
+// let here = $.get('http://poetrydb.org/author,title/Shakespeare;Sonnet', function(data) {
+//   let words = data[0]['lines'];
+//   poem = words[Math.floor(Math.random() * words.length)].split(' ');
+// });
     
 $(document).ready(function() {
   let times = 0;
@@ -74,11 +75,13 @@ $(document).ready(function() {
 
 
 
-    //let poem = randomPoem();
+    if(poem === undefined) {
+      poem = randomPoem();
+    }
 
     console.log(poem);
     const extraWords = randomWords();
-    const boxStyle = 'style="width: 60px; height: 25px; border: 2px solid black; left: 90px; top: 50px; padding: 10px"';
+    const boxStyle = 'style="width: 80px; height: 25px; border: 2px solid black; left: 90px; top: 50px; padding: 10px"';
 
     jsonPoem = JSON.stringify(poem);
     ls.create('poem' + String(times++), jsonPoem);
