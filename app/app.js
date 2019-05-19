@@ -28,54 +28,36 @@ $(document).ready(function() {
     ];
   };
 
+  const calculatePlacement = function() {
+    let result = 0;
+    let neg = Math.floor(Math.random() * 2);
+    let magnitude = Math.floor(Math.random() * 100);
+
+    if(neg === 0) {
+      result = -1 * magnitude;
+    } else {
+      result = magnitude;
+    }
+
+    return result;
+  }
+
   $(' .logo ').draggable();
-
-// Testing area for logo randomness
-  // let logoArea = $('#logo-container');
-  // let newWidth = 120;
-  // let newHeight = 180;
-
-  // function randomPlacement(logoContainer) {
-  //   let containerWidth = logo.width();
-  //   let containerHeight = logo.height();
-  //   let randWidth = Math.floor(Math.random() * containerWidth);
-  //   let randHeight = Math.floor(Math.random() * containerHeigth);
-
-  //   let logo = $(document.createElement('div'));
-  //   logo.addClass('logo');
-  //   logo.css({
-  //     top: randHeight,
-  //     left: randWidth,
-  //     position: 'absolute'
-  //   });
-
-  //   logoContainer.append(logo);
-  //   logo.animate({
-  //     width: newWidth,
-  //     height: newHeight
-  //   }, 3000);
-  // }
-
-  // setInterval(function() {
-  //   randomPlacement(logoArea);
-  // }, 1000);
-
-// End testing area for logo randomness
 
   // Generate a random poem. Currently creates random poem from the data structures in data.js
   $( '#generate-poem' ).click(function(event) {
     event.preventDefault();
     $( 'p' ).remove();
 
-
-
     if(poem === undefined) {
       poem = randomPoem();
     }
 
-    console.log(poem);
     const extraWords = randomWords();
     const boxStyle = 'style="width: 80px; height: 25px; border: 2px solid black; left: 90px; top: 50px; padding: 10px"';
+    let extraBoxStyle = function() {
+      return 'style="width: 80px; height: 25px; border: 2px solid black; left: ' + calculatePlacement() + 'px; top: ' + calculatePlacement() + 'px; padding: 10px"';
+    }
 
     jsonPoem = JSON.stringify(poem);
     ls.create('poem' + String(times++), jsonPoem);
@@ -89,7 +71,7 @@ $(document).ready(function() {
 
     for(let i = poem.length; i < extraWords.length; i++) {
       if(extraWords[i] !== '') {
-        $( '#extra-magnets' ).append( '<p id="poem-word' + i + '" ' + boxStyle + '>' + extraWords[i] + '</p>' );
+        $( '#extra-magnets' ).append( '<p id="poem-word' + i + '" ' + extraBoxStyle() + '>' + extraWords[i] + '</p>' );
         $( '#poem-word' + i ).draggable();
       }
     }    
@@ -101,7 +83,6 @@ $(document).ready(function() {
     for(let i = 0; i < words.length; i++) {
       if(encodedWords.includes(hashCode(words[i].toLowerCase()))) {
         $( '#random-quote' ).html( 'GoT Quote Redacted - Adult Content - Thanks to ' + data.character );
-        console.log('Hit it');
         break;
       } else {
         $( '#random-quote' ).html( data.quote + '<br>' + '-' + data.character );
