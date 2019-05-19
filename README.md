@@ -91,8 +91,10 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 ## Notes on the app :notes:
 
 ### The live state of this app can currently be accessed at: 
+
 #### https://lbgraham.github.io/poetry-on-the-page/
-**Note: Live app is currently non-functional, must run locally
+
+**Note:** Live app is currently functional, but it pulls data from the Twiddler words rather than from the API. The API I am currently using for the Shakespeare sonnets doesn't use https. Github hosting does not dig that at all.
 
 ## App Status:
 
