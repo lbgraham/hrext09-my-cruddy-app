@@ -92,6 +92,7 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 
 ### The live state of this app can currently be accessed at: 
 #### https://lbgraham.github.io/poetry-on-the-page/
+**Note: Live app is currently non-functional, must run locally
 
 ## App Status:
 
