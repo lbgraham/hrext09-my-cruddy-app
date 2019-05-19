@@ -4,8 +4,18 @@ $(document).ready(function() {
   // Selects the random word for each part of speech
   const randomElement = function(array) {
     const randomIndex = Math.floor(Math.random() * array.length);
+
     return array[randomIndex];
   };
+
+  const randomWords = function() {
+    let extraMagnetWords = [];
+    for(let i = 0; i < 20; i++) {
+      extraMagnetWords.push(words[Math.floor(Math.random() * words.length)]);
+    }
+
+    return extraMagnetWords;
+  }
 
   // Constructs the random poem
   const randomPoem = function() {
@@ -20,13 +30,45 @@ $(document).ready(function() {
 
   $(' .logo ').draggable();
 
+// Testing area for logo randomness
+  // let logoArea = $('#logo-container');
+  // let newWidth = 120;
+  // let newHeight = 180;
+
+  // function randomPlacement(logoContainer) {
+  //   let containerWidth = logo.width();
+  //   let containerHeight = logo.height();
+  //   let randWidth = Math.floor(Math.random() * containerWidth);
+  //   let randHeight = Math.floor(Math.random() * containerHeigth);
+
+  //   let logo = $(document.createElement('div'));
+  //   logo.addClass('logo');
+  //   logo.css({
+  //     top: randHeight,
+  //     left: randWidth,
+  //     position: 'absolute'
+  //   });
+
+  //   logoContainer.append(logo);
+  //   logo.animate({
+  //     width: newWidth,
+  //     height: newHeight
+  //   }, 3000);
+  // }
+
+  // setInterval(function() {
+  //   randomPlacement(logoArea);
+  // }, 1000);
+
+// End testing area for logo randomness
+
   // Generate a random poem. Currently creates random poem from the data structures in data.js
   $( '#generate-poem' ).click(function(event) {
     event.preventDefault();
     $( 'p' ).remove();
 
     const poem = randomPoem();
-    const extraWords = randomPoem().concat(randomPoem().concat(randomPoem()));
+    const extraWords = randomWords();
     const boxStyle = 'style="display: flex; justify-content: center; \
       align-text: center; height: 25px; border: 2px solid black; padding: 10px"';
 
