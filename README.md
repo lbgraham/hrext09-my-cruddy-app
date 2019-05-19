@@ -77,6 +77,7 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 - [ ] Create a simple blockchain to store the previously created poems for consistence
 - [ ] Add API endpoint for obtaining randomly generated poem
 - [ ] Add support for mobile devices
+- [ ] Post a formatted image og the quote on social media sites
 
 ### Basic Reqs - NOTE: Core feature ideas (except AI text generation) is complete. Improvement tasks are listed above
 - [√] Where to store data? (localstorage)
