@@ -11,6 +11,19 @@
   padding: 10px;
 }
 
+#poetry {
+  display: flex;
+  padding-top: 15px;
+}
+
+#of {
+  padding-bottom: 10px;
+}
+
+#page {
+  padding-top: 15px;
+}
+
 #logo-container {
   display: flex;
   justify-content: flex-start;

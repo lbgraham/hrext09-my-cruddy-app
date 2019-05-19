@@ -1,8 +1,8 @@
-let here = $.get('http://poetrydb.org/author,title/Shakespeare;Sonnet', function(data) {
-  let words = data[0]['lines'];
-  poem = words[Math.floor(Math.random() * words.length)].split(' ');
-});
-
+    let here = $.get('http://poetrydb.org/author,title/Shakespeare;Sonnet', function(data) {
+      let words = data[0]['lines'];
+      poem = words[Math.floor(Math.random() * words.length)].split(' ');
+    });
+    
 $(document).ready(function() {
   let times = 0;
 
@@ -21,6 +21,17 @@ $(document).ready(function() {
 
     return extraMagnetWords;
   }
+
+  // Constructs the random poem
+  const randomPoem = function() {
+    return [
+      randomElement(opening),
+      randomElement(verbs),
+      randomElement(objects),
+      randomElement(nouns),
+      randomElement(tags)
+    ];
+  };
 
   $(' .logo ').draggable();
 
@@ -63,7 +74,8 @@ $(document).ready(function() {
 
 
 
-    // let poem = randomPoem();
+    //let poem = randomPoem();
+
     console.log(poem);
     const extraWords = randomWords();
     const boxStyle = 'style="display: flex; justify-content: center; \
