@@ -1,86 +1,135 @@
 @import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
-/* Poetry on the page logo styling */
-.logo {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  font-family: 'Goudy Bookletter 1900', serif;
-  border: 2px solid black;
-  padding: 10px;
+/* Poetry on the page site grid layout */
+#site {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 80px 300px 300px 100px;
 }
 
-#poetry {
-  display: flex;
-  padding-top: 15px;
-}
-
-#of {
-  padding-bottom: 10px;
-}
-
-#page {
-  padding-top: 15px;
+#header {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  height: 80px;
 }
 
 #logo-container {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 50px);
+  grid-column: 1;
+}
+
+.logo {
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  font-family: 'Goudy Bookletter 1900', serif;
+  border: 2px solid black;
+  padding: 1em; 
+}
+
+#on {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#the {
+  margin-left: 20px;
+}
+
+#page {
+  margin-top: 20px;
+  margin-left: 25px;
 }
 
 form {
-  display: flex;
-  justify-content: flex-end;
-  flex-flow: column
-  width: 150px;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  display: grid;
+  grid-column: 2;
+  justify-items: end;
+  align-items: center;
 }
 
 button {
-  display: flex;
-  justify-content: center;
   background-color: black;
   color: white;
+  width: 200px;
+  height: 40px;
   font-family: 'Inconsolata', monospace;
   font-size: 24px;
 }
 
+button:hover {
+  color: #aaa;
+}
+
 #magnets {
-  display: flex;
-  justify-content: center;
-  height: 300px;
-  font-family: 'Goudy Bookletter 1911', serif;
-  font-size: 18px;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  grid-column: 1;
+  grid-template-columns: repeat(8, 81px);
+  display: grid;
+  text-align: center;
+  padding: 1em;
 }
 
 #extra-magnets {
-  display: flex;
-  justify-content: center;
-  height: 300px;
-  font-family: 'Goudy Bookletter 1911', serif;
-  font-size: 18px;
-}
-
-hr {
-  color: #aaa;
-}
-
-blockquote {
-  display: flex;
-  justify-content: flex-start;
-  width: 50%;
-  color: #aaa
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column: 1;
+  grid-template-columns: repeat(8, 81px);
+  display: grid;
+  text-align: center;
+  padding: 1em;
 }
 
 footer {
-  display: flex;
-  flex-flow: row;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 4;
+  grid-row-end: 4;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+}
+
+blockquote {
+  justify-items: start; 
+  text-align: left;
+  font-family: 'Goudy Bookletter 1900', serif;
+  color: #aaa;
 }
 
 #info {
-  display: flex;
   font-family: 'Inconsolata', monospace;
   color: #aaa;
-  justify-content: flex-end;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

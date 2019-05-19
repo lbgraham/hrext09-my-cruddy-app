@@ -78,8 +78,7 @@ $(document).ready(function() {
 
     console.log(poem);
     const extraWords = randomWords();
-    const boxStyle = 'style="display: flex; justify-content: center; \
-      align-text: center; height: 25px; border: 2px solid black; padding: 10px"';
+    const boxStyle = 'style="width: 60px; height: 25px; border: 2px solid black; left: 90px; top: 50px; padding: 10px"';
 
     jsonPoem = JSON.stringify(poem);
     ls.create('poem' + String(times++), jsonPoem);
