@@ -79,6 +79,17 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 #### MVP #4: Create a simple blockchain to record each randomly generated poem.
 
 ## Outstanding Tasks :calendar:
+
+### **Note:** At this point I have 3 main (perhaps lofty) goals I would like to accomplish before Friday. However, I spent quite a bit of time working on this over the weekend and have quite a few things to take care of during the week that may limit the time I can put in to it.
+
+#### Immediate goals
+
+- [ ] Integrate a python tensorflow Shakespeare based text generator that uses RNN with eager execution. This algorithm produces Shakespeare-like poetry and produces some interesting pieces of text that I believe would be a funny addition to the application
+- [ ] Build a simple blockchain in javascript from scratch to store the created poems on a blockchain (just for fun, absolutely no value to the application)
+- [ ] Create the ability to collect all of the magnets that are located towards the top of the page and save their state to generate an email and post to social media with the lovely poem you created (probably won't make it to this one)
+
+##### Other Tasks
+
 - [√] General clean-up and refactoring of code (Mostly happy with the code currently, but need to work on app.js a bit)
 - [√] Add randomization to the initial placement of the logo magnets in the header on page load
 - [√] Add randomization to the magnets that form the inital poem once is is generated (Ok with this for now)
@@ -86,12 +97,9 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 - [√] Add ability to pull a line from a sonnet from Shakespeare via API as a interim step to machine learning (does not work on Github Pages - uses a insecure API)
 - [√] Stylize the 'Create Poetry' button for aesthetics (Looks ok to me for now)
 - [√] Improve overall page aesthetic (Overall happy with the current aesthetic once I get the random placement of the extra magnets implemented)
-- [ ] Integrate text generation using tensorflow.js on a trained model of poetry
 - [ ] Add an additional selection to display an entire generated poem or generated piece of prose
-- [ ] Create a simple blockchain to store the previously created poems for consistence
 - [ ] Add API endpoint for obtaining randomly generated poem
 - [√] Add support for mobile devices (But the formatting is blah. It does work though)
-- [ ] Post a formatted image of the quote on social media sites
 
 ### Basic Reqs - NOTE: Core feature ideas (except AI text generation) is complete. Improvement tasks are listed above
 - [√] Where to store data? (localstorage)
