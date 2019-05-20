@@ -14,6 +14,10 @@ $(document).ready(function() {
       extraMagnetWords.push(words[Math.floor(Math.random() * words.length)]);
     }
 
+    for(let i = 0; i < 3; i++) {
+       extraMagnetWords.push(tags[Math.floor(Math.random() * tags.length)]);
+    }
+
     return extraMagnetWords;
   }
 
