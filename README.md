@@ -1,3 +1,17 @@
+## Notes on the app :notes:
+
+### The live state of this app can currently be accessed at: 
+
+#### https://lbgraham.github.io/poetry-on-the-page/
+
+**Note:** Live app is currently functional, but it pulls data from the Twiddler words rather than from the API. The API I am currently using for the Shakespeare sonnets doesn't use https. Github hosting does not dig that at all.
+
+## App Status:
+
+**Note: Currently only testing under Google Chrome for Mac (Version 74.0.3729.157 (Official Build) (64-bit))**
+
+The app currently has basic functionality, but still needs to address some of the tasks listed in the *Outstanding Tasks* section
+
 ### The app formaly known as hrext09-my-cruddy-app, is now:
 
 # Poetry on the Page :writing_hand:
@@ -87,19 +101,5 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 - [√] UI/UX considerations (how are we going to use this)
 
 #### AI/machine learning was included because I have a personal interest in these areas and wanted to see what I was capable of during this project. The basic implementation of the text generation was based on the Twiddler application. Positioning and moving elements around the page is one of my weak skill areas and I wanted to gain some experieince with this.
-
-## Notes on the app :notes:
-
-### The live state of this app can currently be accessed at: 
-
-#### https://lbgraham.github.io/poetry-on-the-page/
-
-**Note:** Live app is currently functional, but it pulls data from the Twiddler words rather than from the API. The API I am currently using for the Shakespeare sonnets doesn't use https. Github hosting does not dig that at all.
-
-## App Status:
-
-**Note: Currently only testing under Google Chrome for Mac (Version 74.0.3729.157 (Official Build) (64-bit))**
-
-The app currently has basic functionality, but still needs to address some of the tasks listed in the *Outstanding Tasks* section
 
 
