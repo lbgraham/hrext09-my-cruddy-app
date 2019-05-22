@@ -8,6 +8,7 @@ $(document).ready(function() {
     event.preventDefault();
     $( 'p' ).remove();
 
+    // Default back to a text file if no access to the API
     if(poem === undefined) {
       poem = randomPoem();
     }
