@@ -55,6 +55,8 @@ form {
   grid-row-end: 1;
   display: grid;
   grid-column: 2;
+  justify-content: end;
+  align-items: center;
 }
 
 button {
