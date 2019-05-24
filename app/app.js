@@ -8,6 +8,10 @@ $(document).ready(function() {
     event.preventDefault();
     $( 'p' ).remove();
 
+    $.get('http://poetrydb.org/author,title/Shakespeare;Sonnet', function(data) {
+      let words = data[1]['lines'];
+      poem = words[Math.floor(Math.random() * words.length)].split(' ');
+    });
     // Default back to a text file if no access to the API
     if(poem === undefined) {
       poem = randomPoem();
