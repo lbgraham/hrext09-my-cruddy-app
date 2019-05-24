@@ -80,8 +80,6 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 
 ## Outstanding Tasks :calendar:
 
-### **Note:** At this point I have 3 main (perhaps lofty) goals I would like to accomplish before Friday. However, I spent quite a bit of time working on this over the weekend and have quite a few things to take care of during the week that may limit the time I can put in to it.
-
 #### Immediate goals
 
 - [ ] Integrate a python tensorflow Shakespeare based text generator that uses RNN with eager execution. This algorithm produces Shakespeare-like poetry and produces some interesting pieces of text that I believe would be a funny addition to the application
@@ -107,7 +105,5 @@ I have a week to develop a working prototype. I am realitively new to front-end 
 - [√] How to modify data? (update action, delete action)
 - [√] How to view data? (style?)
 - [√] UI/UX considerations (how are we going to use this)
-
-#### AI/machine learning was included because I have a personal interest in these areas and wanted to see what I was capable of during this project. The basic implementation of the text generation was based on the Twiddler application. Positioning and moving elements around the page is one of my weak skill areas and I wanted to gain some experieince with this.
 
 
